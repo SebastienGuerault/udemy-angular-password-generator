@@ -11,9 +11,9 @@ https://angular.io/guide/setup-local
 
 Clone this repository with your Git client or by executing :
 
-git clone https://github.com/telerik/kendo-angular-getting-started.git
+git clone https://github.com/SebastienGuerault/udemy-angular-password-generator.git
 
-Enter the project directory, e.g. cd kendo-angular-getting-started
+Enter the project directory, e.g. cd udemy-angular-password-generator
 
 Run npm install to install the project dependencies.
 

@@ -38,7 +38,7 @@
 					(click)="onGenerate()"					
 		>Generate!</button>
 	
-		<ng-container *ngIf="visible">
+		<ng-container *ngIf="password">
 			<div class="generated-password">
 				<label for="generatedPassword">Your Password</label>
 				<input type="text" [value]="password" />

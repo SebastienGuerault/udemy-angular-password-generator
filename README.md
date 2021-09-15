@@ -20,6 +20,7 @@ Run npm install to install the project dependencies.
 ## **Development Server**
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Or you can run ng serve -o to directly open the app in your browser.
 
 ## **Code Scaffolding**
 

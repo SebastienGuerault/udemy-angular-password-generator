@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   isDisabled: boolean = true;
+  visible: boolean = false;
   useLetters: boolean = false;
   useNumbers: boolean = false;
   useSymbols: boolean = false;
@@ -70,6 +71,7 @@ export class AppComponent {
     }
     
     this.password = generatedPassword;
+    this.visible = !this.visible;
     //console.log(this.password);
   }
 }

@@ -1,51 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="app.component.css" rel="stylesheet" />
-  <title>Page 1</title>
-</head>
-<body>
-	<div class="password-generator-form">
+<div class="password-generator-form">
 
-		<h1>Password Generator</h1>
-		<div class="password-length">
-			<label for="passwordLength">Password Length (6 characters minimum)</label>
-			<input type="number" [value]="passwordLength" required (input)="onChangePasswordLength($event.target.value)"/>
-		</div>
-
-
-
-		<div class="preference">
-			<input type="checkbox" name="letters" id="letters" (change)="onUseLettersChecked()"/>
-			<label for="letters">Use Letters</label>
-		</div>
-		<div class="preference">
-			<input type="checkbox" name="numbers" id="numbers" (change)="onUseNumbersChecked()"/>
-			<label for="numbers">Use Numbers</label>
-		</div>
-		<div class="preference">
-			<input type="checkbox" name="symbols" id="symbols" (change)="onUseSymbolsChecked()"/>
-			<label for="symbols">Use Symbols</label>
-		</div>
-		
-		<button 	class="button-generate" 
-					type="button" 
-					value="generate"
-					[disabled]="disabledButton()"
-					(click)="onGenerate()"					
-		>Generate!</button>
-	
-		<ng-container *ngIf="password">
-			<div class="generated-password">
-				<label for="generatedPassword">Your Password</label>
-				<input type="text" [value]="password" />
-			</div>
-		</ng-container>
-		
+	<h1>Password Generator</h1>
+	<div class="password-length">
+		<label for="passwordLength">Password Length (6 characters minimum)</label>
+		<input type="number" [value]="passwordLength" required (input)="onChangePasswordLength($event.target.value)"/>
 	</div>
-  
-</body>
-</html>
+
+
+
+	<div class="preference">
+		<input type="checkbox" name="letters" id="letters" (change)="onUseLettersChecked()"/>
+		<label for="letters">Use Letters</label>
+	</div>
+	<div class="preference">
+		<input type="checkbox" name="numbers" id="numbers" (change)="onUseNumbersChecked()"/>
+		<label for="numbers">Use Numbers</label>
+	</div>
+	<div class="preference">
+		<input type="checkbox" name="symbols" id="symbols" (change)="onUseSymbolsChecked()"/>
+		<label for="symbols">Use Symbols</label>
+	</div>
+	
+	<button 	class="button-generate" 
+				type="button" 
+				value="generate"
+				[disabled]="disabledButton()"
+				(click)="onGenerate()"					
+	>Generate!</button>
+
+	<ng-container *ngIf="password">
+		<div class="generated-password">
+			<label for="generatedPassword">Your Password</label>
+			<input type="text" [value]="password" />
+		</div>
+	</ng-container>
+	
+</div>
